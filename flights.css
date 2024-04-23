@@ -387,6 +387,26 @@ a{
                     height: 200px;
                    }
              }
+        
 
+ @media screen and (max-width:500px){
+ .imga{ 
+    width: 100%;
+ }
+ .pt1-footer-footer{ 
+    gap: 20px;
+}
+ }
+ @media screen and (max-width:1150px){
+.pt1-footer-footer{ 
+    gap: 75px;
+}
+ }
+ @media screen and (max-width:500px){
+    
+    .pt1-footer-footer{ 
+       gap: 20px;
+   }
+}
         
 

@@ -116,9 +116,15 @@ width: 100%;
 .red{ 
     color: red;
 }
+.part2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width:1110px) {
     .website{
         flex-direction: column;
+        padding-top: 400px;
     }
 }

@@ -7,9 +7,10 @@ html,body,.website{
     display: flex; 
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 100px;
     font-family: "Gothic A1", sans-serif;
     padding-top: 500px;
+   
 }
 .title{ 
     font-size: xx-large;
@@ -40,6 +41,7 @@ font-family: "Gothic A1", sans-serif;
     height: auto;
     max-width: 90%;
     max-height: 90%;
+    
 }
 .input{ 
     border: none;
@@ -117,10 +119,16 @@ width: 62%;
     max-width: 90%;
     max-height: 90%;
 }
-
-
-@media screen and (max-width:1570px) {
+.part2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (max-width:768px) {
     .website{
         flex-direction: column;
     }
 }
+
+
