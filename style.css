@@ -12,7 +12,7 @@ body{
    
 }
 .website{ 
-    overflow: scroll;
+   overflow: auto;
 }
 .part1{ 
     background-image: url(/images1/Rectangle\ 31.svg); 
@@ -87,6 +87,10 @@ a{
     color: white; 
     display: none;
     width: 100%;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 9;
+    
 }  
 #closeMenu{ 
     cursor: pointer;
@@ -292,7 +296,8 @@ a{
 }
 .part5 img{ 
     max-width: 100%;
-  max-height: 100%;
+  max-height: 100%; 
+  width: 100%;
 }
 @media screen and (max-width: 1858px){ 
     .part3{ 

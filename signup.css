@@ -3,34 +3,19 @@ html,body,.website{
     padding: 0;
     margin: 0;
 }
-.website{ 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-    font-family: "Gothic A1", sans-serif;
-    padding-top: 500px;
-}
-.title{ 
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: "Gothic A1", sans-serif;
-}
-.subtitle{ 
-font-family: Montserrat;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.5px;
-color: gray;
-font-family: "Gothic A1", sans-serif;
 
-}
-.box1{ 
+.website{ 
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.part2 img{ 
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
 }
 .part1{ 
     display: flex;
@@ -41,6 +26,7 @@ font-family: "Gothic A1", sans-serif;
     max-width: 90%;
     max-height: 90%;
 }
+
 .input{ 
     border: none;
     outline: none;
@@ -55,7 +41,7 @@ legend{
 }
 .box2{ 
     display: flex;
-    flex-direction: column;
+    
     align-items: start;
     justify-content: start;
     gap: 20px;
@@ -72,8 +58,9 @@ legend{
 }
 .box3{ 
     display: flex;
-    align-items: center;
-    gap: 85px;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
 }
 .minibox1{ 
     display: flex;
@@ -90,36 +77,47 @@ legend{
     display: flex;
     align-items: center; 
     justify-content: start;
-    width: 62%;
+    width: 100%;
 }
 .box4 img{ 
     cursor: pointer;
-   width: 330px;
+   width: 100%;
 }
 .or{ 
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 330px;
+    width: 100%;
 }
 .or img{ 
     width: 100%;
 }
 .footer{ 
-width: 62%;
+width: 100%;
 }
 .footer img{ 
     width: 100%;
 } 
-.part2 img{ 
-    width: auto;
-    height: auto;
-    max-width: 90%;
-    max-height: 90%;
+.box5{ 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fieldset3{ 
+    display: flex;
+}
+.box6{ 
+    display: flex;
+    gap: 10px;
+}.minibox{ 
+    display: flex;
+    gap: 5px;
+}
+.red{ 
+    color: red;
 }
 
-
-@media screen and (max-width:1570px) {
+@media screen and (max-width:1110px) {
     .website{
         flex-direction: column;
     }
