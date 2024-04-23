@@ -15,7 +15,7 @@ body{
    overflow: auto;
 }
 .part1{ 
-    background-image: url(/images1/Rectangle\ 31.svg); 
+    background-image: url(images1/Rectangle\ 31.svg); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -203,7 +203,7 @@ a{
     margin-bottom: 50px;
 } 
 .part3-box1{ 
-    background-image: url(/images2/Rectangle\ 40.svg);
+    background-image: url(images2/Rectangle\ 40.svg);
     width: 36%; 
     height: 100%;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ a{
     font-family: "Montserrat", sans-serif;
 }
 .part3-box2{ 
-    background-image: url(/images2/Rectangle\ 41.svg);
+    background-image: url(images2/Rectangle\ 41.svg);
     width: 36%; 
     height: 100%;
     background-repeat: no-repeat;
