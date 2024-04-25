@@ -50,7 +50,7 @@ a{
 .part2{ 
     background: rgba(255, 255, 255, 0.939);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.412);
-    width: 90%;
+    width: 70%;
     height: 20%;
     border-radius: 16px;
     display: flex;
@@ -59,6 +59,9 @@ a{
     gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .img1{ 
     width: 25%;
@@ -71,12 +74,371 @@ a{
 }
 .body{ 
     width: 100%;
-    height: 600px;
     display: flex;
+    align-items: start;
+
 }
 .sidebar{ 
     width: 40%;
+    align-items: center;
 }
 .main{ 
     width: 60%;
 }
+.title1{ 
+    font-weight: bold;
+    font-size: x-large;
+}
+.sidebar{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
+}
+.priceSlider{ 
+width: 330px;
+
+}
+.min-max label{ 
+    float: left;
+}
+.min{ 
+    float: left;
+    display: flex;
+}
+.max{ 
+    float: right;
+    display: flex;
+}
+.min-max span{ 
+    display: inline-block;
+    width: 30px;
+    
+    text-align: center;
+    
+}
+.min-max-range {
+    width: 100%;
+    padding: 30px 0px 20px 0px;
+    
+
+}
+.range{ 
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: black;
+    outline: none;
+    width: 50%;
+    height: 2px;
+    max-width: 400px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.range::-webkit-slider-thumb{
+    appearance: none;
+    background: rgba(141, 211, 187, 1);
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+.slider-container {
+ width: 330px;
+  }
+  
+  .slider{
+    width: 50%;
+    float: left;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: black;
+    outline: none;
+    width: 50%;
+    height: 2px;
+    max-width: 400px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    
+  }
+  
+  .slider::-webkit-slider-thumb{
+    appearance: none;
+    background: rgba(141, 211, 187, 1);
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.time{ 
+    margin-bottom: 20px;
+}
+.img4{ 
+    width: 330px;
+}
+.ratings img{ 
+    cursor: pointer;
+}
+.airlines{ 
+    display: flex;
+    flex-direction: column;
+}
+.airlines img{ 
+    width: 60%;
+}
+.minibox0{ 
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.trips{ 
+    display: flex;
+    flex-direction: column;
+}
+.trips img{ 
+    width: 60%;
+}
+.mini-title{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ratings{ 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#tripButton{ 
+    cursor: pointer;
+}
+#airlineBUtton{ 
+    cursor: pointer;
+}
+#rateButton{ 
+    cursor: pointer;
+}
+.main-header{ 
+ background: rgba(255, 255, 255, 1);
+padding: 16px, 24px, 16px, 24px;
+box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+width: 93%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: 80px;
+border-radius: 12px;
+
+}
+.main-subheader{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 93%;
+    margin-top: 25px;
+}
+.body{ 
+    gap: 0px;
+}
+.main-body{ 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.body1{ 
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+    border-radius: 12px;
+    padding: 24px 16px 24px 16px;
+    width: 93%;
+    height: 260px;
+    display: flex;
+    gap: 15px;
+}
+.minibox4{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.minibox4-header{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.minibox4-body{
+   
+}
+.minibox4-body img{ 
+    
+}
+.img5{ 
+    width: 16%;
+}
+.minibox4-footer{ 
+    width: 80%;
+}
+.minibox4-body{ 
+    width: 80%;
+}
+
+@media screen and (max-width:1427px) {
+    .minibox4-header{ 
+        width: 80%;
+    }
+}
+@media screen and (max-width:1401px) {
+    .btn1{ 
+        width: 70%;
+    }
+    .btn2{ 
+        width: 6%;
+    }
+}
+@media screen and (max-width:1169px) {
+    .minibox4-header{ 
+        width: 60%;
+    }
+    
+    .minibox4-body img{ 
+        width: 100%;
+    }
+    .minibox3 img{ 
+       height: 35%;
+    }
+    .body1{ 
+        height: 187px;
+    }
+}
+@media screen and (max-width:1000px) {
+ .minibox4-header{ 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+ .btn1{ 
+    width: 80%;
+ }
+ .btn2{ 
+    width: 7%;
+ }
+}
+
+@media screen and (max-width:1060px) {
+.main-header img{ 
+    width: 25%;
+}
+}
+@media screen and (max-width:970px) {
+.btn1{ 
+    width: 90%;
+}
+.btn2{ 
+    width: 8%;
+}
+}
+@media screen and (max-width:900px) {
+    .btn1{ 
+        width: 100%;
+    }
+    .btn2{ 
+        width: 7%;
+    }
+    
+    }
+
+    @media screen and (max-width:1001px) {
+      .body1{ 
+        flex-direction: column;
+        height: auto;
+        width: 55%;
+        align-items: center;
+        justify-content: center;
+      }
+      .main-body{ 
+        justify-content: center;
+        align-items: center;
+      }
+      .minibox4{ 
+        align-items: center;
+        justify-content: center;
+      }
+      .minibox4-body{ 
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media screen and (max-width:900px) {
+ 
+        .main-header{ 
+            display: flex;
+            flex-direction: column;
+            height: 225px;
+            width: 52%;
+        }
+        .main{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-header img{ 
+            width: 45%;
+        }
+        .minibox4-body img{ 
+            width: 140%;
+        }
+    }
+    @media screen and (max-width:768px) {
+    .body{ 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    .part2{ 
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .img2{ 
+        width: 24%;
+    }
+    .img1{ 
+        width: 50%;
+    }
+    .img3{ 
+        width: 8%;
+    }
+    .part2{ 
+        gap: 10px;
+    }
+    .sidebar{
+        gap: 40px;
+    }
+    .box3{ 
+        gap: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    }
+
+    @media screen and (max-width:513px){
+ 
+        
+    }
