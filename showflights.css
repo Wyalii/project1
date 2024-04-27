@@ -612,6 +612,9 @@ border-radius: 12px;
         .main-subheader{ 
             justify-content: center;
         }
+        .open-box{ 
+            display: flex;
+        }
     }
 
     @media screen and (max-width:470px){

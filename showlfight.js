@@ -6,7 +6,7 @@ let closeMenu = document.getElementById('close');
 let mobile = document.getElementById('mobile');
 let openBox = document.querySelector('.open-box')
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 769) {
       openBox.style.display = "flex";
   } else {
       openBox.style.display = "none";
