@@ -129,7 +129,7 @@ width: 330px;
     appearance: none;
     background-color: black;
     outline: none;
-    width: 50%;
+    width: 100%;
     height: 2px;
     max-width: 400px;
     float: left;
@@ -293,7 +293,90 @@ border-radius: 12px;
 .minibox4-body{ 
     width: 80%;
 }
+#filterByPrice{ 
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-size: larger;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+.small-box{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.small-box-title{ 
+    color: rgba(17, 34, 17, 1);
+    font-size: small;
+    text-align: center;
+    
+}
+.cost{ 
+    color: rgba(255, 134, 130, 1);
 
+}
+#mobile{ 
+    height: 100vh;
+    position: fixed;
+    width: 50%;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    display: none;
+}
+.minibox5{ 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.mobile-logo{ 
+    height: 40px;
+}
+.white{ 
+    color: white;
+}
+.mobile-box1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.box4{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.open-box{ 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.footer{ 
+    width: 100%;
+}
+.footer img{ 
+    max-width: 100%;
+    max-height: 100%; 
+    width: 100%;
+}
+.btn1{ 
+    cursor: pointer;
+}
 @media screen and (max-width:1427px) {
     .minibox4-header{ 
         width: 80%;
@@ -436,9 +519,103 @@ border-radius: 12px;
     align-items: center;
     justify-content: center;
     }
+    #laptop{ 
+        display: none;
+    }
+    .main-header{ 
+        width: 100%;
+        gap: 20px;
+        height: 370px;
+    }
     }
 
-    @media screen and (max-width:513px){
- 
+    @media screen and (max-width:768px){
+        .main-subheader{ 
+            width: 100%;
+        }
+       
         
+    }
+    @media screen and (max-width:446px){
+        .body{ 
+            width: 100%;
+        }
+        .sidebar{ 
+            width: 100%;
+            padding-left: 0;
+        }
+        .main{ 
+            width: 100%;
+        }
+        .main-subheader{ 
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:362px){
+        .main-subheader img{ 
+        width: 50%;
+        }
+        .priceSlider{ 
+            width: 200px;
+        }
+        .slider-container{ 
+            width: 200px;
+        }
+    } 
+
+    @media screen and (max-width:500px){ 
+        .img1{
+            width: 70%;
+        }
+        .img2{ 
+            width: 35%;
+        }
+        .img3{ 
+            width: 12%;
+        }
+    }
+
+    @media screen and (max-width:768px){
+        .body{ 
+            width: 100%;
+        }
+        .sidebar{ 
+            width: 100%;
+            padding-left: 0;
+        }
+        .main{ 
+            width: 100%;
+        }
+        .minibox0{ 
+            align-items: center;
+            justify-content: center;
+        }
+        .ratings{ 
+            align-items: center;
+            justify-content: center;
+        }
+        .airlines{ 
+            align-items: center;
+            justify-content: center;
+        }
+        .trips{ 
+            align-items: center;
+            justify-content: center;
+        }
+        .main-header{ 
+            width: 50%;
+        }
+        .main-subheader{ 
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width:470px){
+        .main-header img{ 
+            width: 60%;
+        }
+        .main-header{ 
+            width: 70%;
+        }
     }

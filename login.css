@@ -32,6 +32,7 @@ font-family: "Gothic A1", sans-serif;
     align-items: start;
     justify-content: start;
     gap: 20px;
+    width: 100%;
 }
 .part1{ 
     display: flex;
@@ -50,7 +51,9 @@ font-family: "Gothic A1", sans-serif;
     font-size: larger;
 }
 .fieldset{ 
-    width: 300px;
+    width: 100%;
+    border-radius: 4px
+    
 }
 legend{ 
     font-size: medium;
@@ -61,21 +64,25 @@ legend{
     align-items: start;
     justify-content: start;
     gap: 20px;
+    width: 100%;
 }
 .part1-container{ 
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 34%;
 }
 .fieldset2{ 
-    width: 300px;
+    width: 100%;
     display: flex;
     align-items: center;
+    border-radius: 4px;
 }
 .box3{ 
     display: flex;
     align-items: center;
     gap: 85px;
+    width: 100%;
 }
 .minibox1{ 
     display: flex;
@@ -92,23 +99,23 @@ legend{
     display: flex;
     align-items: center; 
     justify-content: start;
-    width: 62%;
+    width: 100%;
 }
 .box4 img{ 
     cursor: pointer;
-   width: 330px;
+   width: 100%;
 }
 .or{ 
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 330px;
+    width: 100%;
 }
 .or img{ 
     width: 100%;
 }
 .footer{ 
-width: 62%;
+width: 100%;
 }
 .footer img{ 
     width: 100%;
@@ -128,6 +135,9 @@ width: 62%;
 @media screen and (max-width:768px) {
     .website{
         flex-direction: column;
+    }
+    .part1-container{ 
+        width: 60%;
     }
 }
 

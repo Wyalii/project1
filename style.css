@@ -299,6 +299,12 @@ a{
   max-height: 100%; 
   width: 100%;
 }
+.minibox{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 @media screen and (max-width: 1858px){ 
     .part3{ 
         height: 600px;

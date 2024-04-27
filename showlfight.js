@@ -1,16 +1,33 @@
 let minSlider = document.getElementById('min');
 let maxSlider = document.getElementById('max');
 let outputMin = document.getElementById('min-value');
-let outputMax = document.getElementById('max-value');
-outputMin.innerHTML = `${minSlider.value}$`
-outputMax.innerHTML = `${maxSlider.value}$`
-minSlider.oninput = function(){ 
-    outputMin.innerHTML = `${this.value}$`;
-}
+let openMenu = document.getElementById('open');
+let closeMenu = document.getElementById('close');
+let mobile = document.getElementById('mobile');
+let openBox = document.querySelector('.open-box')
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 768) {
+      openBox.style.display = "flex";
+  } else {
+      openBox.style.display = "none";
+  }
+});
+openMenu.addEventListener('click', ()=>{ 
+mobile.style.display = "flex";
+openBox.style.display = "none"
+})
+closeMenu.addEventListener('click',() =>{ 
+  mobile.style.display = "none";
+  openBox.style.display = "flex"
+})
 
-maxSlider.oninput = function(){ 
-    outputMax.innerHTML = `${this.value}$`;
+minSlider.oninput = function(){ 
+  outputMin.innerHTML = `${this.value}$`;
 }
+outputMin.innerHTML = `${minSlider.value}$`
+
+
+
 
 const startSlider = document.getElementById("startSlider");
 const endSlider = document.getElementById("endSlider");
@@ -37,6 +54,7 @@ endSlider.addEventListener("input", function() {
 });
 
 updateTimeRange();
+
 
 let ratings = document.getElementById('rates'); 
 let airlanes = document.getElementById('planes');
@@ -69,3 +87,38 @@ airlaneButton.addEventListener('click', ()=>{
       trips.style.display = "none"
     }
     })
+let ticket1 = document.getElementById('ticket1');
+let ticket2 = document.getElementById('ticket2');
+let ticket3 = document.getElementById('ticket3');
+let ticket4 = document.getElementById('ticket4');
+    let filterByPrice = document.getElementById('filterByPrice');
+    filterByPrice.addEventListener('click', ()=>{ 
+      console.log(outputMin.innerHTML);
+      let arrayOfTickets = [
+        ticket1,
+        ticket2,
+        ticket3,
+        ticket4
+      ]
+      console.log(arrayOfTickets[1].getAttribute('value'));
+      // if(arrayOfTickets[1].getAttribute('value') >= outputMin.innerHTML){ 
+      //   arrayOfTickets[1].style.display = 'flex';
+      // }else{ 
+      //   arrayOfTickets[1].style.display = 'none';
+      // }
+      for(let i = 0 ; i < arrayOfTickets.length; i++){ 
+        let values = arrayOfTickets[i].getAttribute('value');
+        if(values >= outputMin.innerHTML){ 
+          arrayOfTickets[i].style.display = "flex"
+        }else{ 
+          arrayOfTickets[i].style.display = "none"
+        } 
+       console.log(outputMin.innerHTML)
+      }
+      
+      
+    })
+
+   console.log( document.querySelector('.body1').getAttribute('value'))
+   
+    

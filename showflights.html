@@ -6,16 +6,17 @@
     <title>Document</title>
     <link href="showflights.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95cb2dbdaa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="website">
         <div class="part1">
             <div class="part1-header" id="laptop"> 
                 <div class="box1">
-                    <div class="minibox"> 
-                        <img src="images3/airplane.svg">
-                        <a href="flights.html">find flight</a>
-                    </div>
+                    <a class="minibox" href="flights.html"> 
+                        <img src="images3/airplane.svg" class="cursor">
+                        <div class="cursor">find flight</div>
+                    </a>
                     <div class="minibox"> 
                         <img src="images3/ion_bed.svg">
                         <a> 
@@ -23,7 +24,9 @@
                         </a>
                     </div>
                 </div>
-                <img src="images3/logo.svg" class="cursor">
+                <a href="index.html">
+                    <img src="images3/logo.svg" class="cursor">
+                </a>
                 <div class="box2"> 
                     <a class="cursor"> 
                         <img src="images4/Frame 28.svg">
@@ -33,6 +36,40 @@
                     </a>
                 </div>
             </div> 
+            <div class="open-box">
+                <i class="fa-solid fa-bars fa-2xl" id="open"></i>
+            </div>
+            <div id="mobile">
+                <a class="minibox5" href="flights.html"> 
+                    <img src="images1/airplane.svg" class="cursor airplanee">
+                    <div class="cursor">find flight</div>
+                </a>
+
+                <a class="minibox5"> 
+                    <img src="images1/ion_bed.svg">
+                    <div> 
+                        find stays
+                    </div>
+                </a>
+
+                <a href="index.html">
+                    <img src="images1/Logo.svg" class="cursor mobile-logo">
+                </a>
+
+                <div class="box4"> 
+                    <a class="cursor"> 
+                        <div class="white">Favourites</div>
+                        
+                    </a>
+                    <img src="images4/_.svg">
+                    <a class="cursor mobile-box1">
+                        <img src="images4/Ellipse 1.svg">
+                        <div class="white">John D.</div>
+                    </a>
+                    
+                </div>
+                <i class="fa-solid fa-x fa-2xl" style="color: #ffffff;" id="close"></i>
+            </div>
         </div>
 
         <div class="part2">
@@ -52,17 +89,14 @@
                         <div class="min">
                             <span id="min-value">$</span>
                         </div>
-
-                        <div class="max">
-                            <span id="max-value">$</span>
-                        </div>
                         
                     </div>
 
                     <div class="min-max-range">
-                        <input type="range" min="0" max="600" value="50" class="range" id="min">
-                        <input type="range" min="600" max="1200" value="600" class="range" id="max">
+                        <input type="range" min="0" max="899" value="100" class="range" id="min">
+                        
                     </div>
+                    <button id="filterByPrice">Filter</button>
                 </div>
              <img src="images4/Rectangle 16.svg" class="img4">
                 <div class="slider-container">
@@ -122,78 +156,98 @@
                         <img src="images4/Frame 49.svg">
                     </div>
                     <div class="main-body">
-                        <div class="body1">
+                        <div class="body1" value = "101" id="ticket1">
                             <div class="minibox3">
                                 <img src="images4/image 40.svg">
                             </div>
                             <div class="minibox4">
                                 <div class="minibox4-header">
                                     <img src="images4/Frame 57.svg">
-                                    <img src="images4/Frame 51.svg">
+                                    <div class="small-box">
+                                        <div class="small-box-title">Starting From</div>
+                                        <div class="cost">99$</div>
+                                    </div>
                                 </div>
                                 <div class="minibox4-body">
                                     <img src="images4/Frame 50.svg">
                                 </div>
                                 <div class="minibox4-footer">
                                     <img src="images4/btn2.svg" class="btn2">
-                                    <img src="images4/btn1.svg" class="btn1">
+                                    <a>
+                                        <img src="images4/btn1.svg" class="btn1">
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="body1">
+                        <div class="body1" value = "250" id="ticket2">
                             <div class="minibox3">
-                                <img src="images4/image 40.svg">
+                                <img src="images4/image 41.svg">
                             </div>
                             <div class="minibox4">
                                 <div class="minibox4-header">
                                     <img src="images4/Frame 57.svg">
-                                    <img src="images4/Frame 51.svg">
+                                    <div class="small-box">
+                                        <div class="small-box-title">Starting From</div>
+                                        <div class="cost">249$</div>
+                                    </div>
                                 </div>
                                 <div class="minibox4-body">
                                     <img src="images4/Frame 50.svg">
                                 </div>
                                 <div class="minibox4-footer">
                                     <img src="images4/btn2.svg" class="btn2">
-                                    <img src="images4/btn1.svg" class="btn1">
+                                    <a>
+                                        <img src="images4/btn1.svg" class="btn1">
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="body1">
+                        <div class="body1" value = "601" id="ticket3">
                             <div class="minibox3">
-                                <img src="images4/image 40.svg">
+                                <img src="images4/image 43.svg">
                             </div>
                             <div class="minibox4">
                                 <div class="minibox4-header">
                                     <img src="images4/Frame 57.svg" class="img6">
-                                    <img src="images4/Frame 51.svg" class="img5">
+                                    <div class="small-box">
+                                        <div class="small-box-title">Starting From</div>
+                                        <div class="cost">600$</div>
+                                    </div>
                                 </div>
                                 <div class="minibox4-body">
                                     <img src="images4/Frame 50.svg">
                                 </div>
                                 <div class="minibox4-footer">
                                     <img src="images4/btn2.svg" class="btn2">
-                                    <img src="images4/btn1.svg" class="btn1">
+                                    <a>
+                                        <img src="images4/btn1.svg" class="btn1">
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="body1">
+                        <div class="body1" value = "900" id="ticket4">
                             <div class="minibox3">
-                                <img src="images4/image 40.svg">
+                                <img src="images4/image 45.svg">
                             </div>
                             <div class="minibox4">
                                 <div class="minibox4-header">
                                     <img src="images4/Frame 57.svg">
-                                    <img src="images4/Frame 51.svg">
+                                    <div class="small-box">
+                                        <div class="small-box-title">Starting From</div>
+                                        <div class="cost">899$</div>
+                                    </div>
                                 </div>
                                 <div class="minibox4-body">
                                     <img src="images4/Frame 50.svg">
                                 </div>
                                 <div class="minibox4-footer">
                                     <img src="images4/btn2.svg" class="btn2">
-                                    <img src="images4/btn1.svg" class="btn1">
+                                    <a>
+                                        <img src="images4/btn1.svg" class="btn1">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +256,9 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="footer">
+                <img src="images2/footer.svg">
+            </div>
         </div>
     
     <script src="showlfight.js"></script>
