@@ -331,6 +331,8 @@ border-radius: 12px;
     gap: 40px;
     align-items: center;
     display: none;
+    padding-top: 40px;
+    padding-left: 25px;
 }
 .minibox5{ 
     color: white;
@@ -364,6 +366,7 @@ border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: start;
+    display: none;
     
 }
 .footer{ 
@@ -617,5 +620,12 @@ border-radius: 12px;
         }
         .main-header{ 
             width: 70%;
+        }
+        
+    } 
+
+    @media screen and (max-width:552px){
+        .box4{ 
+            flex-direction: column;
         }
     }

@@ -232,10 +232,7 @@ a{
     padding-bottom: 30px;
     font-family: "Montserrat", sans-serif;
 }
-.part3-box1 img{ 
-    height: auto;
-    width: 30%;
-}
+
 .part3-box2 img{ 
     height: auto;
     width: 30%;
@@ -304,6 +301,14 @@ a{
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+.qar{
+    width: 30%;
+    height: auto;
+}
+.qar img{ 
+    width: 100%;
+    height: auto;
 }
 @media screen and (max-width: 1858px){ 
     .part3{ 
