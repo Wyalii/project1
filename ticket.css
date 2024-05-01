@@ -60,6 +60,8 @@ a{
     display: none;
     padding-top: 40px;
     padding-left: 25px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 .minibox5{ 
     color: white;
@@ -267,6 +269,27 @@ height: auto;
   max-height: 100%; 
   width: 100%;
 }
+.cursor{ 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+@keyframes show{ 
+    from{ 
+        width: 0%;
+    }
+    to{ 
+        width: 50%;
+    }
+}
+@keyframes hide {
+    from{ 
+        width: 50%;
+    }
+    to{ 
+        width: 0%;
+    }
+}
 @media screen and (max-width:768px) {
     #laptop{ 
         display: none;
@@ -346,5 +369,11 @@ height: auto;
     height: auto;
     max-width: 90%;
     max-height: 90%;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .box4{ 
+        flex-direction: column;
     }
 }

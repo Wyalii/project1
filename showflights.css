@@ -315,10 +315,25 @@ border-radius: 12px;
     color: rgba(255, 134, 130, 1);
 
 }
+@keyframes show{ 
+    from{ 
+        width: 0%;
+    }
+    to{ 
+        width: 50%;
+    }
+}
+@keyframes hide {
+    from{ 
+        width: 50%;
+    }
+    to{ 
+        width: 0%;
+    }
+}
 #mobile{ 
     height: 100vh;
     position: fixed;
-    width: 50%;
     background-color: black;
     opacity: 0.8;
     display: flex;
@@ -328,6 +343,9 @@ border-radius: 12px;
     display: none;
     padding-top: 40px;
     padding-left: 25px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 999;
 }
 .minibox5{ 
     color: white;
@@ -361,7 +379,7 @@ border-radius: 12px;
     align-items: center;
     justify-content: start;
     display: none;
-    padding-left: 50px;
+   
 }
 .footer{ 
     width: 100%;
@@ -373,6 +391,11 @@ border-radius: 12px;
 }
 .btn1{ 
     cursor: pointer;
+}
+.cursor{ 
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 @media screen and (max-width:1427px) {
     .minibox4-header{ 

@@ -24,3 +24,33 @@ document.getElementById('checkbox').addEventListener('click', () => {
         password.setAttribute('type', "password");
     }
 });
+
+
+document.getElementById("submit").addEventListener("click", function(event) {
+    event.preventDefault();
+    let firstname = document.getElementById("firstName").value;
+    let lastname = document.getElementById("lastName").value;
+    let phoneNumber  = document.getElementById('phoneNumber').value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+  
+    
+    let userData = {
+      lastname:lastname,
+      email: email,
+      password: password,
+      firstname: firstname,
+      phoneNumber:phoneNumber
+    };
+  
+    
+    let userDataJSON = JSON.stringify(userData);
+  
+    
+    localStorage.setItem("userData", userDataJSON);
+    location.href = "ticket.html"
+    
+  
+
+  });
+  

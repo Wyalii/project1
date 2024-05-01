@@ -7,13 +7,26 @@ let mobile = document.getElementById('mobile');
 let openBox = document.querySelector('.open-box')
 
 openMenu.addEventListener('click', ()=>{ 
-mobile.style.display = "flex";
-openBox.style.display = "none"
-})
-closeMenu.addEventListener('click',() =>{ 
-  mobile.style.display = "none";
-  openBox.style.display = "flex"
-})
+  mobile.style.animationName = "show"
+  
+  setTimeout(()=>{ 
+      mobile.style.display = "flex";
+  openBox.style.display = "none"
+  }, 150)
+  
+  
+  })
+  closeMenu.addEventListener('click',() =>{ 
+      mobile.style.animationName = "hide"
+      setTimeout(()=>{ 
+          mobile.style.display = "none";
+          openBox.style.display = "flex"
+          
+      }, 300)
+  
+     
+     
+  })
 
 minSlider.oninput = function(){ 
   outputMin.innerHTML = `${this.value}$`;
@@ -114,5 +127,19 @@ let ticket4 = document.getElementById('ticket4');
     })
 
    console.log( document.querySelector('.body1').getAttribute('value'))
-   
+
+   let userDataJSON = localStorage.getItem("userData");
+
     
+        let userData = JSON.parse(userDataJSON);
+        let userInfo = document.getElementById('userinfo').innerHTML = `${userData.firstname + " " + userData.lastname}`;
+        let userInfoMobile = document.getElementById('userInfoMobile').innerHTML = `${userData.firstname + " " + userData.lastname}`;
+    console.log(userData.lastname)
+   
+    window.addEventListener('resize', () => {
+      if (window.innerWidth = 768) {
+          openMenu.style.display = "block";
+      } else {
+          openMenu.style.display = "none";
+      }
+  });

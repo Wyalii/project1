@@ -8,6 +8,22 @@ html,body,.website{
     
    
 }
+@keyframes show{ 
+    from{ 
+        width: 0%;
+    }
+    to{ 
+        width: 100%;
+    }
+}
+@keyframes hide {
+    from{ 
+        width: 100%;
+    }
+    to{ 
+        width: 0%;
+    }
+}
 .part1{ 
     width: 100%;
     padding-top: 5px; 
@@ -87,6 +103,8 @@ a{
     flex-direction: column;
     gap: 35px;
     padding-top: 100px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 #closeMenu{ 
     display: none;
@@ -408,5 +426,6 @@ a{
        gap: 20px;
    }
 }
+
         
 

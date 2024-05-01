@@ -90,7 +90,8 @@ a{
     opacity: 0.8;
     position: fixed;
     z-index: 9;
-    
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }  
 #closeMenu{ 
     cursor: pointer;
@@ -290,6 +291,22 @@ a{
     width: 100%;
    
     
+}
+@keyframes show{ 
+    from{ 
+        width: 0%;
+    }
+    to{ 
+        width: 100%;
+    }
+}
+@keyframes hide {
+    from{ 
+        width: 100%;
+    }
+    to{ 
+        width: 0%;
+    }
 }
 .part5 img{ 
     max-width: 100%;
