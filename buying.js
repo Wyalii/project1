@@ -1,6 +1,8 @@
 let userDataJSON = localStorage.getItem("userData");
 let userData = JSON.parse(userDataJSON);
 let userInfo = document.getElementById('userinfo').innerHTML = `${userData.firstname + " " + userData.lastname}`;
+
+
 let userInfoMobile = document.getElementById('userInfoMobile').innerHTML = `${userData.firstname + " " + userData.lastname}`;
 let checkbox1 = document.getElementById('checkbox1');  
 let checkbox2 = document.getElementById('checkbox2');  
@@ -10,7 +12,33 @@ let mobile = document.getElementById('mobile');
 let openBox = document.querySelector('.open-box')
 let boxHeader = document.querySelector('.box5-header');
 let boxBody= document.querySelector('.box5-body');
+let continueBtn = document.querySelector('.continue');
+let box6 = document.querySelector('.box6');
+let box9 = document.querySelector('.box9');
+let checkbox3 = document.getElementById('checkbox3');
+let box9Header = document.querySelector('.box9-header');
+let sweetalert = document.getElementById('sweetalert')
 
+
+
+    console.log(userData.lastname)
+
+
+checkbox3.addEventListener('click',()=>{ 
+if(!box9Header.classList.contains('background')){
+    box9Header.classList.add('background');
+    checkbox3.src = 'images6/icon (1).svg'
+}else{ 
+    box9Header.classList.remove('background');
+    checkbox3.src = 'images6/icon.svg'
+}
+})
+
+continueBtn.addEventListener('click',()=>{ 
+    box6.style.display = "none";
+    box9.style.display = "flex"
+
+})
 checkbox1.addEventListener('click', ()=>{ 
 if(!boxBody.classList.contains('background')){ 
 if(!boxHeader.classList.contains('background')){ 
@@ -69,3 +97,57 @@ window.addEventListener('resize', () => {
         openMenu.style.display = "none";
     }
 });
+
+
+
+
+
+sweetalert.addEventListener('click',()=>{ 
+    
+    Swal.fire({
+        html:`
+        <div class="card">
+            <fieldset class="fieldset1">
+                <legend>Card Number</legend>
+                4321 4321 4321
+            </fieldset>
+
+            <div class="fieldset-box1">
+                <fieldset class="fieldset2">
+                    <legend>Exp Date</legend>
+                    02/27
+                </fieldset>
+
+                <fieldset class="fieldset2">
+                    <legend>CVC</legend>
+                    123
+                </fieldset>
+            </div>
+
+            <fieldset class="fieldset1">
+                <legend>Name on card</legend>
+                ${userData.firstname + " " + userData.lastname}
+            </fieldset>
+
+            <fieldset class="fieldset1">
+                <legend>Country or region</legend>
+                Country
+            </fieldset>
+            <div class="card-div">
+                Securely save my information for 1-click checkout
+            </div>
+
+            
+            
+        </div>
+        
+        
+        `
+        
+        
+      }).then(function() {
+        window.location = "ticketInfo.html";
+    });
+      
+     
+})

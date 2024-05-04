@@ -23,12 +23,6 @@ closeMenu.addEventListener('click',() =>{
    
 })
 
-
-
-
-
-
-
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 768) {
         openMenu.style.display = "flex";
