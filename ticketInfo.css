@@ -165,11 +165,153 @@ a{
     display: flex;
     justify-content: space-between;
 }
+.container-body{ 
+    width: 100%;
+    display: flex;
+}
+.subheader{ 
+    color: gray;
+    font-size: medium;
+}
+.body-part1{ 
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: center;
+   background: rgba(235, 246, 242, 1);
+   align-items: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+}
+.body-part1 img{ 
+    width: 20%;
+}
+.body-part2{ 
+    width: 30%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.header-part2{ 
+    background: rgba(141, 211, 187, 1);
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-part2{ 
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.small-head2{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+.small-footer2{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.body-part3{
+    background-image: url(images7/Frame\ 239.svg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.minibox1{ 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.small-box{ 
+    display: flex;
+    flex-direction: column;
+}
+.container-terms{ 
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subtitle{ 
+    font-size: larger;
+
+}
+.web-footer{ 
+    width: 100%;
+    margin-top: 40px;
+}
+.web-footer img{ 
+    width: 100%;
+}
 @media screen and (max-width:768px) {
     .part1-header{ 
         display: none;
     }
     .open-box{ 
         display: flex;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container-body{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .body-part1{ 
+        width: 100%;
+       
+       
+    }
+    .body-part1 img{ 
+        width: 5%;
+    }
+    .body-part2{ 
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .small-head2{ 
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .small-head2 img{ 
+        width: 20%;
+    }
+    .small-footer2 img{ 
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .small-head2{ 
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+    }
+
+    .small-head2 img{ 
+        width: 30%;
     }
 }

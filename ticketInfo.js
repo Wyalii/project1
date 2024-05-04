@@ -3,6 +3,13 @@ let closeMenu = document.getElementById('close');
 let mobile = document.getElementById('mobile');
 let openBox = document.querySelector('.open-box');
 
+let userDataJSON = localStorage.getItem("userData");
+    let userData = JSON.parse(userDataJSON);
+    let userInfo1 = document.getElementById('userInfo').innerHTML = `${userData.firstname + " " + userData.lastname}`;
+    let userInfo = document.getElementById('userinfo').innerHTML = `${userData.firstname + " " + userData.lastname}`;
+    let userInfoMobile = document.getElementById('userInfoMobile').innerHTML = `${userData.firstname + " " + userData.lastname}`;
+    console.log(userInfo1)
+
 openMenu.addEventListener('click', ()=>{ 
     mobile.style.animationName = "show"
     
@@ -26,11 +33,7 @@ openMenu.addEventListener('click', ()=>{
     })
 
 
-    let userDataJSON = localStorage.getItem("userData");
-    let userData = JSON.parse(userDataJSON);
-    let userInfo = document.getElementById('userinfo').innerHTML = `${userData.firstname + " " + userData.lastname}`;
-    let userInfoMobile = document.getElementById('userInfoMobile').innerHTML = `${userData.firstname + " " + userData.lastname}`;
-console.log(userData.lastname)
+    
 
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 768) {
