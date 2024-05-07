@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="showhotels.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95cb2dbdaa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="website">
+        <div class="part1">
+            <div class="part1-header" id="laptop"> 
+                <div class="box1">
+                    <a class="minibox" href="flights.html"> 
+                        <img src="images3/airplane.svg" class="cursor">
+                        <div class="cursor">find flight</div>
+                    </a>
+                    <div class="minibox"> 
+                        <img src="images3/ion_bed.svg">
+                        <a href="hotel.html"> 
+                            find stays
+                        </a>
+                    </div>
+                </div>
+                <a href="index.html">
+                    <img src="images3/logo.svg" class="cursor">
+                </a>
+                <div class="box2"> 
+                    <a class="cursor"> 
+                        <img src="images4/Frame 28.svg">
+                    </a>
+                    <a class="cursor">
+                        <img src="images4/Ellipse 1.svg" id="profileBtn">
+                        <div id="userinfo"></div>
+                    </a>
+                </div>
+            </div> 
+            <div class="open-box">
+                <i class="fa-solid fa-bars fa-2xl" id="open"></i>
+            </div>
+            <div id="mobile">
+                <a class="minibox5" href="flights.html"> 
+                    <img src="images1/airplane.svg" class="cursor airplanee">
+                    <div class="cursor">find flight</div>
+                </a>
+
+                <a class="minibox5" href="hotel.html"> 
+                    <img src="images1/ion_bed.svg">
+                    <div> 
+                        find stays
+                    </div>
+                </a>
+
+                <a href="index.html">
+                    <img src="images1/Logo.svg" class="cursor mobile-logo">
+                </a>
+
+                <div class="box4"> 
+                    <a class="cursor"> 
+                        <div class="white">Favourites</div>
+                        
+                    </a>
+                    <a class="cursor mobile-box1">
+                        <img src="images4/Ellipse 1.svg">
+                        <div class="white" id="userInfoMobile"></div>
+                    </a>
+                    
+                </div>
+                <i class="fa-solid fa-x fa-2xl" style="color: #ffffff;" id="close"></i>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profile-part1">
+                <img src="images8/Ellipse 2.svg">
+                <div class="minibox1">
+                    <div class="profileUserInfo"></div>
+                    <div class="smallest-text">Online</div>
+                </div>
+                
+            </div>
+            <img src="images8/Rectangle 4.svg">
+
+            <div class="profile-part2">
+               <a href="index.html">
+                <div class="minibox2">
+                    <img src="images8/User.svg">
+                    <div>My Account</div>
+                </div>
+               </a>
+                <div class="minibox2">
+                    <img src="images8/card.svg">
+                    <div>Payments</div>
+                </div>
+                <div class="minibox2">
+                    <img src="images8/settings.svg">
+                    <div>settings</div>
+                </div>
+            </div>
+
+            <img src="images8/Rectangle 4.svg">
+
+            <div class="profile-part2">
+                <div class="minibox2">
+                    <img src="images8/Support.svg">
+                    <div>support</div>
+                </div>
+    
+                <div class="minibox2">
+                    <img src="images8/Logout.svg">
+                    <div>logout</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="part2">
+            <div class="fieldset-box">
+                <fieldset class="fieldset1">
+                    <legend>Enter Destiantion</legend>
+                    <img src="images8/Component 24.svg">
+                    <div>Istanbul,Trukey</div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend>Check in</legend>
+                    <div>Fri 12/2</div>
+                    <img src="images8/calendar.svg">
+                    
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend>Check out</legend>
+                    <div>Sun 12/4</div>
+                    <img src="images8/calendar.svg">
+                    
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend>Rooms & Guests</legend>
+                    <img src="images8/user2.svg">
+                    <div>1 room,2 guests</div>
+                    
+                    
+                </fieldset>
+            </div>
+            <img src="images4/Button.svg" class="img3">
+        </div>
+
+        <div class="body"> 
+            <div class="sidebar">
+                <div class="title1">Filter</div>
+                <div class="priceSlider">
+                    <div>Price</div>
+                    <div class="min-max">
+                        <div class="min">
+                            <span id="min-value">$</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="min-max-range">
+                        <input type="range" min="0" max="899" value="100" class="range" id="min">
+                        
+                    </div>
+                    <button id="filterByPrice">Filter</button>
+                </div>
+             <img src="images4/Rectangle 16.svg" class="img4">
+                <div class="slider-container">
+                    <div class="time">Time</div>
+                    <input type="range" min="0" max="24" value="0" class="slider" id="startSlider">
+                    <input type="range" min="0" max="24" value="24" class="slider" id="endSlider">
+                    <div id="timeRange"></div>
+                  </div>
+
+                  <div class="box3">
+                    <div class="minibox0">
+                        <div class="mini-title">Rating 
+                            <img src="images4/chevron_down.svg" id="rateButton">
+                        </div>
+                        <div class="ratings" id="rates" style="display: flex;">
+                            <img src="images4/Button1.svg">
+                            <img src="images4/Button (1).svg">
+                            <img src="images4/Button (2).svg">
+                            <img src="images4/Button (3).svg">
+                            <img src="images4/Button (4).svg">
+                        </div>
+                    </div>
+                    <div class="minibox0">
+                        <div class="mini-title">
+                            Freebies <img src="images4/chevron_down.svg" id="airlineButton">
+                        </div>
+                        <div class="airlines" id="planes" style="display: flex;">
+                            <img src="images9/Frame 101.svg">
+                            <img src="images9/Frame 102.svg">
+                            <img src="images9/Frame 103.svg">
+                            <img src="images9/Frame 104.svg">
+                            <img src="images9/Frame 105.svg">
+                        </div>
+                    </div>
+                    <div class="minibox0">
+                        <div class="mini-title">Amenities
+                            <img src="images4/chevron_down.svg" id="tripButton">
+                        </div>
+                        
+                        <div class="trips" id="trip" style="display: flex;">
+                            <img src="images9/frame1.svg" class="foto6">
+                            <img src="images9/frame2.svg" class="foto6">
+                            <img src="images9/frame3.svg" class="foto7">
+                            <img src="images9/frame4.svg" class="foto8">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main">
+                    <div class="main-header">
+                        <img src="images4/Frame 131.svg">
+                        <img src="images4/Frame 132.svg">
+                        <img src="images4/Frame 133.svg">
+                        <img src="images4/Frame 157.svg">
+                    </div>
+                    <div class="main-subheader"> 
+                        <img src="images4/Showing 4 of 257 places.svg">
+                        <img src="images4/Frame 49.svg">
+                    </div>
+                    <div class="main-body">
+                        <div class="body1" value = "49" id="ticket1">
+                            <img src="images9/Rectangle 3.svg" class="foto1">
+                            <div class="body1-box1">
+                                <div class="body1-box1-header">
+                                    <div class="title">CVK Park Bosphorus hotel Istanbul</div>
+                                    <div class="small-box">
+                                        <div class="small-text">starting from</div>
+                                        <div class="red">$50/night</div>
+                                    </div>
+                                </div>
+
+                                <div class="body1-body">
+                                    <div class="body1-body-box1">
+                                       <img src="images9/Location.svg">
+                                       <div class="small-text">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</div>
+                                    </div>
+
+                                    <div class="body1-body-box2">
+                                        <div class="small-box1">
+                                            <img src="images9/Frame 52.svg">
+                                            <div class="small-text1">5 star hotel</div>
+                                            
+                                        </div>
+                                        <div class="small-box2">
+                                            <img src="images9/cafe.svg">
+                                            <div class="small-text1">20+ aminities</div>
+                                        </div>
+                                    </div>
+                                    <img src="images9/Frame 57.svg" class="foto2">
+                                </div>
+                                <img src="images9/Rectangle 4.svg" class="foto3">
+
+                                <div class="body1-footer">
+                                    <img src="images9/Button.svg" class="foto5">
+                                    <img src="images9/style_layer.svg" class="foto4">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body1" value = "250" id="ticket2">
+                            <img src="images9/Rectangle 3 (1).svg" class="foto1">
+                            <div class="body1-box1">
+                                <div class="body1-box1-header">
+                                    <div class="title">CVK Park Bosphorus hotel Istanbul</div>
+                                    <div class="small-box">
+                                        <div class="small-text">starting from</div>
+                                        <div class="red">$249/night</div>
+                                    </div>
+                                </div>
+
+                                <div class="body1-body">
+                                    <div class="body1-body-box1">
+                                       <img src="images9/Location.svg">
+                                       <div class="small-text">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</div>
+                                    </div>
+
+                                    <div class="body1-body-box2">
+                                        <div class="small-box1">
+                                            <img src="images9/Frame 52.svg">
+                                            <div class="small-text1">5 star hotel</div>
+                                            
+                                        </div>
+                                        <div class="small-box2">
+                                            <img src="images9/cafe.svg">
+                                            <div class="small-text1">20+ aminities</div>
+                                        </div>
+                                    </div>
+                                    <img src="images9/Frame 57.svg" class="foto2">
+                                </div>
+                                <img src="images9/Rectangle 4.svg" class="foto3">
+
+                                <div class="body1-footer">
+                                    <img src="images9/Button.svg" class="foto5">
+                                    <img src="images9/style_layer.svg" class="foto4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="body1" value = "601" id="ticket3">
+                            <img src="images9/Rectangle 3 (2).svg" class="foto1">
+                            <div class="body1-box1">
+                                <div class="body1-box1-header">
+                                    <div class="title">CVK Park Bosphorus hotel Istanbul</div>
+                                    <div class="small-box">
+                                        <div class="small-text">starting from</div>
+                                        <div class="red">$600/night</div>
+                                    </div>
+                                </div>
+
+                                <div class="body1-body">
+                                    <div class="body1-body-box1">
+                                       <img src="images9/Location.svg">
+                                       <div class="small-text">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</div>
+                                    </div>
+
+                                    <div class="body1-body-box2">
+                                        <div class="small-box1">
+                                            <img src="images9/Frame 52.svg">
+                                            <div class="small-text1">5 star hotel</div>
+                                            
+                                        </div>
+                                        <div class="small-box2">
+                                            <img src="images9/cafe.svg">
+                                            <div class="small-text1">20+ aminities</div>
+                                        </div>
+                                    </div>
+                                    <img src="images9/Frame 57.svg" class="foto2">
+                                </div>
+                                <img src="images9/Rectangle 4.svg" class="foto3">
+
+                                <div class="body1-footer">
+                                    <img src="images9/Button.svg" class="foto5">
+                                    <img src="images9/style_layer.svg" class="foto4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="body1" value = "900" id="ticket4">
+                            <img src="images9/Rectangle 3 (3).svg" class="foto1">
+                            <div class="body1-box1">
+                                <div class="body1-box1-header">
+                                    <div class="title">CVK Park Bosphorus hotel Istanbul</div>
+                                    <div class="small-box">
+                                        <div class="small-text">starting from</div>
+                                        <div class="red">$900/night</div>
+                                    </div>
+                                </div>
+
+                                <div class="body1-body">
+                                    <div class="body1-body-box1">
+                                       <img src="images9/Location.svg">
+                                       <div class="small-text">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</div>
+                                    </div>
+
+                                    <div class="body1-body-box2">
+                                        <div class="small-box1">
+                                            <img src="images9/Frame 52.svg">
+                                            <div class="small-text1">5 star hotel</div>
+                                            
+                                        </div>
+                                        <div class="small-box2">
+                                            <img src="images9/cafe.svg">
+                                            <div class="small-text1">20+ aminities</div>
+                                        </div>
+                                    </div>
+                                    <img src="images9/Frame 57.svg" class="foto2">
+                                </div>
+                                <img src="images9/Rectangle 4.svg" class="foto3">
+
+                                <div class="body1-footer">
+                                    <img src="images9/Button.svg" class="foto5">
+                                    <img src="images9/style_layer.svg" class="foto4">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+                <img src="images2/footer.svg" class="web-footer">
+            
+    </div>
+    <script src="showhotels.js"></script>
+</body>
+</html>

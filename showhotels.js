@@ -98,6 +98,7 @@ let ticket1 = document.getElementById('ticket1');
 let ticket2 = document.getElementById('ticket2');
 let ticket3 = document.getElementById('ticket3');
 let ticket4 = document.getElementById('ticket4');
+let filterByPrice = document.getElementById('filterByPrice');
 filterByPrice.addEventListener('click', () => {
   let arrayOfTickets = [ticket1, ticket2, ticket3, ticket4];
   let minPrice = parseFloat(outputMin.innerHTML);
@@ -112,8 +113,7 @@ filterByPrice.addEventListener('click', () => {
   });
 });
 
-   console.log( document.querySelector('.body1').getAttribute('value'))
-
+  
    let userDataJSON = localStorage.getItem("userData");
 
     
@@ -129,3 +129,19 @@ filterByPrice.addEventListener('click', () => {
           openMenu.style.display = "none";
       }
   });
+
+
+  let profileBtn = document.getElementById('profileBtn');
+  let profile = document.querySelector('.profile');
+  let profileMobile = document.getElementById('profileMobile')
+  profileBtn.addEventListener('click',()=>{
+
+      if(profile.style.display == "" || profile.style.display == "none"){ 
+          profile.style.display = "flex"
+      }else{ 
+          profile.style.display = "none"
+      }
+  })
+
+
+ 

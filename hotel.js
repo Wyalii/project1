@@ -16,7 +16,7 @@ openMenu.addEventListener('click', ()=>{
     
     setTimeout(()=>{ 
         mobile.style.display = "flex";
-    openMenuContainer.style.display = "none"
+        openMenuContainer.style.display = "none"
     }, 150)
     
     
@@ -36,9 +36,11 @@ openMenu.addEventListener('click', ()=>{
 
     window.addEventListener('resize', () => {
         if (window.innerWidth <= 768) {
-            openMenu.style.display = "flex";
+            
+            openMenuContainer.style.display = "flex"
         } else {
-            openMenu.style.display = "none";
+            openMenuContainer.style.display = "none"
+            
             
         }
     });
@@ -47,6 +49,7 @@ openMenu.addEventListener('click', ()=>{
 
     let profileBtn = document.getElementById('profileBtn');
     let profile = document.querySelector('.profile');
+    let profileMobile = document.getElementById('profileMobile')
     profileBtn.addEventListener('click',()=>{
 
         if(profile.style.display == "" || profile.style.display == "none"){ 
@@ -56,12 +59,4 @@ openMenu.addEventListener('click', ()=>{
         }
     })
 
-    profileBtnMobile.addEventListener('click',()=>{
-        if(profile.style.display == "" || profile.style.display == "none"){ 
-            profile.style.display = "flex"
-            profile.style.top = "100px"
-            
-        }else if(profile.style.display = "flex"){ 
-            profile.style.display = "none"
-        }
-    })
+    
