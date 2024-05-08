@@ -194,7 +194,12 @@ a{
     border-radius: 50%;
 }
 /* header for laptops, larger screens and mobile is done here */
-
+#profileBtn2{ 
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
 .image-container{ 
     width: 100%;
     position: relative;

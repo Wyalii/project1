@@ -54,7 +54,7 @@ a{
     height: 100vh;
     position: fixed;
     width: 50%;
-    background-color: black;
+    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -482,6 +482,12 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    cursor: pointer;
+}
+#profileBtn3{ 
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
     cursor: pointer;
 }
 

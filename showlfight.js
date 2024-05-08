@@ -142,10 +142,12 @@ filterByPrice.addEventListener('click', () => {
           profile.style.display = "none"
       }
   })
+  let profileBtn3 = document.getElementById('profileBtn3');
 let profileBtn2 = document.getElementById('profileBtn2');
   let url = localStorage.getItem('image');
 let img = new Image();
 img.src = url;
 profileBtn.src = img.src;
 profileBtn2.src = img.src;
+profileBtn3.src = img.src;
 console.log(profileBtn.src);

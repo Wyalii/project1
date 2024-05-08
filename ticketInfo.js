@@ -43,7 +43,7 @@ window.addEventListener('resize', () => {
         
     }
 });
-
+let profileBtn4 = document.getElementById('profileBtn4');
 let profileBtn = document.getElementById('profileBtn');
     let profile = document.querySelector('.profile');
     let profileMobile = document.getElementById('profileMobile')
@@ -63,4 +63,5 @@ img.src = url;
 profileBtn.src = img.src;
 profileBtn2.src = img.src;
 profileBtn3.src = img.src;
+profileBtn4.src = img.src;
 console.log(profileBtn.src);

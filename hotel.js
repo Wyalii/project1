@@ -59,10 +59,11 @@ openMenu.addEventListener('click', ()=>{
         }
     })
 
-
+let profileBtn2 = document.getElementById('profileBtn2')
 let url = localStorage.getItem('image');
 let img = new Image();
 img.src = url;
 profileBtn.src = img.src;
+profileBtn2.src = img.src;
 profileBtnMobile.src = img.src; 
 console.log(profileBtn.src);
