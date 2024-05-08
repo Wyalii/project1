@@ -187,8 +187,11 @@ a{
     gap: 5px;
     
 }
-.profileBtn{ 
+#profileBtn{ 
     cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
 /* header for laptops, larger screens and mobile is done here */
 
@@ -439,6 +442,12 @@ width: 100%;
 
 .box10-part2-container1 img{ 
     width:50% ;
+}
+
+#profileBtnMobile{ 
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 @media screen and (max-width:907px) {
     .box8{ 

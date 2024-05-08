@@ -125,7 +125,9 @@ width: 100%;
     align-items: center;
     justify-content: center;
 }
-
+#get-image{ 
+    display: none;
+}
 @media screen and (max-width:1110px) {
     .website{
         flex-direction: column;

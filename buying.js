@@ -151,3 +151,24 @@ sweetalert.addEventListener('click',()=>{
       
      
 })
+
+
+let profileBtn = document.getElementById('profileBtn');
+    let profile = document.querySelector('.profile');
+    let profileMobile = document.getElementById('profileMobile')
+    profileBtn.addEventListener('click',()=>{
+
+        if(profile.style.display == "" || profile.style.display == "none"){ 
+            profile.style.display = "flex"
+        }else{ 
+            profile.style.display = "none"
+        }
+    })
+let profileBtn2 = document.getElementById('profileBtn2');
+    let url = localStorage.getItem('image');
+let img = new Image();
+img.src = url;
+profileBtn.src = img.src;
+profileBtn2.src = img.src;
+console.log(profileBtn.src);
+

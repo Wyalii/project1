@@ -48,7 +48,19 @@ document.getElementById("submit").addEventListener("click", function(event) {
     localStorage.setItem("userData", userDataJSON);
     location.href = "ticket.html"
     
-  
+    
 
   });
+
+  let image = document.getElementById('get-image');
+  image.addEventListener('change', () => {
+      let fileReader = new FileReader();
+      fileReader.readAsDataURL(image.files[0]);
+  
+      fileReader.addEventListener('load', () => {
+          let url = fileReader.result;
+          localStorage.setItem('image',url)
+      });
+  });
+  
   

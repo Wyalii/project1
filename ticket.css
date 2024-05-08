@@ -70,6 +70,10 @@ a{
     justify-content: center;
     gap: 20px;
 
+
+}
+.web-footer{ 
+    width: 100%;
 }
 .mobile-logo{ 
     height: 40px;
@@ -274,6 +278,19 @@ height: auto;
     align-items: center;
     gap: 5px;
 }
+#profileBtn{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+#profileBtn2{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 @keyframes show{ 
     from{ 
         width: 0%;
