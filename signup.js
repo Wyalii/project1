@@ -46,7 +46,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
     
     let userDataJSON = JSON.stringify(userData);
     localStorage.setItem("userData", userDataJSON);
-    location.href = "index.html"
+    location.href = "account.html"
     
     
 

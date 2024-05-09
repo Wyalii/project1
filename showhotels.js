@@ -142,6 +142,15 @@ filterByPrice.addEventListener('click', () => {
           profile.style.display = "none"
       }
   })
-
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 768) {
+        
+        openMenuContainer.style.display = "flex"
+    } else {
+        openMenuContainer.style.display = "none"
+        
+        
+    }
+});
 
  

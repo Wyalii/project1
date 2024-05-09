@@ -49,5 +49,10 @@ window.addEventListener('resize', () => {
     }
 });
 
+let hotel = document.querySelector('.hotel');
+hotel.addEventListener('click',()=>{ 
+    window.location.href = "hotel.html"
+})
+
 
     

@@ -109,6 +109,8 @@ a{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-direction: column;
+
 }
 .open-box{ 
     width: 100%;
@@ -413,6 +415,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .web-footer{ 
     width: 100%;
+
 }
 .web-footer img{ 
     max-width: 100%;
@@ -546,4 +549,21 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
 }
 }
+@media screen and (max-width:768px) {
+    .web-footer{ 
+        position: absolute;
+        top: 1800px;
+    }
+}
 
+@media screen and (max-width:768px) {
+    .web-footer{ 
+        top: 1900px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .web-footer{ 
+        top: 1900px;
+    }
+}
