@@ -36,5 +36,4 @@ window.addEventListener('resize', () => {
 let url = localStorage.getItem('image');
 let img = new Image();
 img.src = url;
-profileBtn.src = img.src;
-console.log(profileBtn.src);
+

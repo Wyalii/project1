@@ -80,7 +80,7 @@ a{
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    flex-direction: column; 
+    
     gap: 50px; 
     height: 1300vh; 
     background-color: black; 
@@ -92,6 +92,8 @@ a{
     z-index: 9;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    flex-direction: column;
+    margin-top: 200px;
 }  
 #closeMenu{ 
     cursor: pointer;
@@ -715,4 +717,12 @@ a{
     .part3-box2{ 
         width: 60%;
     }
+}
+
+.box1{ 
+    flex-direction: column;
+}
+
+.box2{ 
+    gap: 25px;
 }

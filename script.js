@@ -24,7 +24,7 @@ mobile.style.animationName = "show"
 
 setTimeout(()=>{ 
     mobile.style.display = "flex";
-openBox.style.display = "none"
+
 }, 150)
 
 
@@ -33,7 +33,7 @@ closeMenu.addEventListener('click',() =>{
     mobile.style.animationName = "hide"
     setTimeout(()=>{ 
         mobile.style.display = "none";
-        openBox.style.display = "flex"
+        
         
     }, 300)
 

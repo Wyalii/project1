@@ -292,5 +292,37 @@ html,body,.website{
     width: 100%;
 }
 
+@media screen and (max-width:450px) {
+    .name-box,.email-box,.password-box,.number-box,.address-box,.date-box{ 
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .footer{ 
+        top: 2000px;
+    }
+
+    .section{ 
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+    }
+    .account{ 
+        top: 1000px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .account-info{ 
+        padding: 0;
+        text-align: center;
+    }
+    .account{ 
+        width: 100%;
+    }
+}
+
+.ragac{ 
+    width: 100%;
+}
 
